@@ -19,7 +19,7 @@ de infraestructura,automatización, seguridad y observabilidad.
 ---
 
 ##  🧱 Arquitectura 
-
+'''memaid
 flowchart TD
  User[Usuarios]
  Browser[Navegador Web]
