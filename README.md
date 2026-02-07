@@ -39,7 +39,7 @@ flowchart TD
        DB
        Worker
    end
-
+```
 ---
 
 ## 🛠️ Tecnologías
