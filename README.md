@@ -19,26 +19,26 @@ de infraestructura,automatización, seguridad y observabilidad.
 ---
 
 ##  🧱 Arquitectura 
-'''memaid
+```mermaid
 flowchart TD
- User[Usuarios]
- Browser[Navegador Web]
+   User[Usuarios]
+   Browser[Navegador Web]
  
- Browser --> |HTTPS| Nginx[Nginx Reverse Proxy]
+   Browser --> |HTTPS| Nginx[Nginx Reverse Proxy]
  
- Nginx --> Frontend[Frontend - Next.js]
- Nginx --> Backend[Backend API - FastAPI]
+   Nginx --> Frontend[Frontend - Next.js]
+   Nginx --> Backend[Backend API - FastAPI]
  
- Backend --> DB[(PostgreSQL)]
- Backend --> Worker[Background Jobs / Cron]
+   Backend --> DB[(PostgreSQL)]
+   Backend --> Worker[Background Jobs / Cron]
 
- subgraph Server["Ubuntu Server"]
-    Nginx
-    Frontend
-    Backend
-    DB
-    Worker
-  end
+   subgraph Server["Ubuntu Server"]
+       Nginx
+       Frontend
+       Backend
+       DB
+       Worker
+   end
 
 ---
 
